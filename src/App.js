@@ -8,6 +8,8 @@ import BoxColor from './BoxColor';
 import CreditCard from './CreditCard';
 import LikeButton from './LikeButton';
 import ClickablePicture from './ClickablePicture';
+import Carousel from './Carousel';
+import Dice from './Dice';
 
 // import Greetings from './Greetings';
 
@@ -103,9 +105,23 @@ function App() {
         />
       </div>
       <LikeButton />
-      <ClickablePicture />
-      // img="/img/persons/maxence.png" //
-      imgClicked="/img/persons/maxence-glasses.png" />
+      <LikeButton />
+      <ClickablePicture
+        img="/img/persons/maxence.png"
+        imgClicked="/img/persons/maxence-glasses.png"
+      />
+
+      <Carousel
+        imgs={[
+          'https://randomuser.me/api/portraits/women/1.jpg',
+          'https://randomuser.me/api/portraits/men/1.jpg',
+          'https://randomuser.me/api/portraits/women/2.jpg',
+          'https://randomuser.me/api/portraits/men/2.jpg',
+        ]}
+      />
+
+      <Dice />
+
       <a
         className="App-link"
         href="https://reactjs.org"
