@@ -10,6 +10,7 @@ import LikeButton from './LikeButton';
 import ClickablePicture from './ClickablePicture';
 import Carousel from './Carousel';
 import Dice from './Dice';
+import NumbersTable from './NumbersTable';
 
 // import Greetings from './Greetings';
 
@@ -121,6 +122,9 @@ function App() {
       />
 
       <Dice />
+
+      <h1>Numbers Table</h1>
+      <NumbersTable limit={12} />
 
       <a
         className="App-link"
